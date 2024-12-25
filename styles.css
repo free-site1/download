@@ -1,0 +1,289 @@
+/* Resetting default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #198bce, #1643a3); /* Gradien latar belakang */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(45deg, #3498db, #8e44ad); /* Gradien biru ke ungu */
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan halus pada header */
+    border-radius: 10px; /* Memberikan efek sudut membulat pada header */
+  }
+  
+  .logo img {
+    width: 150px;
+    height: auto;
+  }
+
+  .logopussy img {
+    width: 200px;
+    height: auto;
+  }
+  
+  .logonewtown img {
+    width: 200px;
+    height: auto;
+  }
+  
+  .tagline p {
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 10px;
+  }
+  
+  .menu-icon {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    cursor: pointer;
+  }
+  
+  .menu-icon span {
+    display: block;
+    width: 25px;
+    height: 4px;
+    margin: 5px 0;
+    background-color: #fff; /* Ubah warna ikon menu agar kontras dengan header */
+  }
+  
+  /* Sidebar Menu */
+  #sideMenu {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Pastikan elemen disusun vertikal */
+    justify-content: flex-start; /* Letakkan elemen di bagian atas */
+    transition: left 0.3s ease;
+  }
+  .menu-title {
+    text-align: center; /* Membuat teks berada di tengah */
+    font-size: 18px;    /* Ukuran font */
+    font-weight: bold;  /* Menebalkan teks */
+    color: rgb(255, 255, 255);       /* Warna teks */
+    margin-bottom: 20px; /* Jarak antara teks dan tombol close */
+    padding-top: 0;      /* Pastikan tidak ada padding atas */
+  }
+  #sideMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #sideMenu ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #sideMenu ul li img {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  #sideMenu p {
+    position: absolute;
+    bottom: 20px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  /* Main Container Styling */
+  .container {
+    background: linear-gradient(135deg, #8e44ad, #3498db); /* Gradien keren untuk konten utama */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Memberikan bayangan pada konten utama */
+    margin: 20px;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Memberikan bayangan pada konten utama */
+    text-align: center;
+  }
+/* Social Media Buttons Section */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.social-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.social-icon.telegram {
+    background-color: #0088cc; /* Telegram Blue */
+}
+
+.social-icon.whatsapp {
+    background-color: #25d366; /* WhatsApp Green */
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Membesar saat hover */
+    opacity: 0.8;
+}
+
+.social-icon.telegram:hover {
+    background-color: #007b99; /* Hover color for Telegram */
+}
+
+.social-icon.whatsapp:hover {
+    background-color: #128c7e; /* Hover color for WhatsApp */
+}
+
+/* Mengatur container untuk membungkus seluruh konten */
+.container {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 2;
+}
+
+/* Tombol Download */
+.download-btn {
+    padding: 40px 20px;
+    background-color: #3498db;
+    gap: 50px; /* Memberikan jarak antar tombol */
+    color: white;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.5); /* Memberikan bayangan pada konten utama */
+    border: none;
+    border-radius: 25px;
+    margin: 20px 0;
+    margin-right: 20px 0;
+    margin-left: 20px ;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    width: auto;
+    font-size: 25px;
+    animation: glowingBorder 0.5s infinite linear; /* Animasi border yang terus bergerak */
+}
+/* Animasi untuk border yang berputar dan saling mengejar */
+@keyframes glowingBorder {
+  0% {
+      border-color: #3498db; /* Biru */
+      box-shadow: 0 0 10px 2px #3498db; /* Glow biru */
+  }
+  25% {
+      border-color: #e74c3c; /* Merah */
+      box-shadow: 0 0 10px 2px #e74c3c; /* Glow merah */
+  }
+  50% {
+      border-color: #f39c12; /* Kuning */
+      box-shadow: 0 0 10px 2px #f39c12; /* Glow kuning */
+  }
+  75% {
+      border-color: #2ecc71; /* Hijau */
+      box-shadow: 0 0 10px 2px #2ecc71; /* Glow hijau */
+  }
+  100% {
+      border-color: #8e44ad; /* Ungu */
+      box-shadow: 0 0 10px 2px #8e44ad; /* Glow ungu */
+  }
+}
+.download-btn:hover {
+    transform: scale(1.05);
+}
+
+.download-btn.android {
+    background-color: #008000; /* Warna biru untuk Android */
+}
+
+.download-btn.ios {
+    background-color: #8e44ad; /* Warna ungu untuk iOS */
+}
+
+/* Tombol Sosial Media (WhatsApp dan Telegram) */
+.social-btn {
+    padding: 12px 30px;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    font-size: 16px;
+    width: auto;
+}
+
+.social-btn:hover {
+    transform: scale(1.05);
+}
+
+.social-btn.whatsapp {
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan halus pada header */
+    background-color: #25d366; /* Warna hijau WhatsApp */
+}
+
+.social-btn.telegram {
+    background-color: #0088cc; /* Warna biru Telegram */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan halus pada header */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Sidebar Close Button */
+.close-btn {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 20px; /* Memberikan jarak dengan kategori */
+}
+
+.test-info {
+  margin-top: 10px; /* Jarak antar paragraf */
+  text-align: center;
+  color: white;
+}
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px; /* Memberikan jarak antar item */
+}
+
+.menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Latar belakang saat hover */
+}
+
+.menu-item:active {
+  transform: scale(0.95); /* Efek klik */
+}
+
